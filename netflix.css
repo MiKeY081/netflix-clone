@@ -1,0 +1,282 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,regular,italic,500,700);
+
+body{
+    background-color: #222;
+    margin: 0 auto;
+    min-width: none;
+    font-family: 'Roboto', sans-serif;
+}
+.landingpage{
+    min-width: 70%;
+    min-height: 100vh;
+    background-image: radial-gradient(rgba(150, 150, 150, 0.5),rgba(20, 20, 20,0.8), rgba(00, 00, 00,0.8)),url(https://assets.nflxext.com/ffe/siteui/vlv3/d7af077c-af5a-4055-8f9a-740a43588583/3fa6713a-569f-4688-9c1a-ce9fb79ad501/NP-en-20230717-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-size: cover;
+    filter: contrast(1.2);
+    /* filter: brightness(0.5); */
+    padding: 10px 10rem;
+    color: red;
+
+}
+.landingpage img{
+    height: 7rem;
+    width: 14rem;
+    /* filter: contrast(3); */
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header button,main button, .faq button{
+    height: 3rem;
+    margin-top: 2rem;
+    width: 7rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(237, 13, 13, 0.8);
+}
+
+.header button a, main button a,.faq button a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    white-space: nowrap;
+}
+
+main button{
+    width:15rem;
+    height: 4rem;
+    border-radius: 15px;
+}
+main button a{
+     font-size: 1.7rem;
+ }
+.landingpage main{
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+/* Input box */
+.input-box{
+position: relative;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+margin-bottom: 20px;
+width: 80%;
+height: 40px;
+/* background-color: rgb(240, 36, 36); */
+
+}
+#username{
+    width: 95%;
+    height: 50px;
+    color: white;
+    background-color: darkslategrey;
+    border: none;
+    position: relative;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 0px 2px 20px;
+    font-size: 20px;
+    /* Padding is very important to focus the pointer in the bottom */
+}
+.floating-label{
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    font-size: 20px;
+    color: #AAA;
+    transition: all 0.2s ease-in-out;
+    
+}
+input:focus ~.floating-label,
+input:valid ~.floating-label{
+    top:3px;
+    font-size: 13px;
+}
+.input{
+    display: flex;
+}
+.input button{
+    position: relative;
+    top: -32px;
+    height: 45px;
+    letter-spacing: 0px;
+    border-radius: 5px;
+
+
+}
+.tv{
+    overflow: hidden;
+}
+.tvad,.mobilehero,.kidshero,.faq{
+    background-color: #000;
+    margin-top:7px;
+    min-height: 75vh;
+    min-width: 90vw;
+    color: white;
+    text-align: center;
+    padding: 50px 50px;
+}
+.tvad{ 
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+
+}
+.tvad .textContent{
+    width: 500px;
+    margin-right: 100px;
+    
+}
+.tv{
+    margin-top: 50px;
+    height: 300px;
+    width: 450px;
+    margin: 20px;
+    border: 5px solid #222;
+}
+.mobilehero{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-image: url(https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg);
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.moviesection{
+    background-color: #000;
+    border: 2px solid #222;
+    width: 350px;
+    height: 075px;
+    position: absolute;
+    top: 350px;
+    left: 140px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.moviesection img{
+    height: 90%;
+    width: 50px;
+    position: absolute;
+    left: 5px;
+}
+.mobilehero .textconnect{
+    
+    font-size: 25px;
+    width: 50%;;
+}
+.moviesection h3{
+    margin-top: 20px ;
+    margin-left: -70px;
+    line-height: 0px;;
+}
+.moviesection span{
+    margin-left: -95px;
+    color: rgb(68, 68, 210);
+
+}
+.moviesection ion-icon{
+    position: absolute;
+    font-size: 30px;
+    right: 5px;
+    top: 25px;
+}
+.kidshero{
+    font-size: 25px;  
+}
+.faq{
+    font-size: 20px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faq .question,.faqanswer{
+    font-size: 25px;
+    background-color: #222;
+    height: 30px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 5px;
+}
+.faq .input{
+    margin-top: 50px;
+    width: 80%;
+}
+.faq ion-icon{
+    font-size: 30px;
+}
+.faq .question:hover{
+   background: darkslategrey;
+}
+.faq button {
+    width: 14rem;  
+}
+
+.faqanswer{
+    display: none;
+    margin-top: -3px;
+    height: auto;
+
+}
+.faqanswer.active{
+    display: block;
+}
+footer{
+    min-height: 30vh;
+    background-color: #000;
+    margin-top:7px;
+    min-height: 75vh;
+    min-width: 80vh;
+    color: white;
+    padding: 50px 50px;
+    font-size: 15px;
+    padding:  50px 10rem;
+}
+footer .contactus{
+    margin-bottom: 30px;
+}
+footer a{
+    display: block;
+    color: white;
+    padding: 10px;
+
+}
+footer .footerlinks{
+    display: grid;
+    grid-template-columns: repeat(3, 300px); 
+    gap: 10px;
+}
+footer #country{
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #fff;
+    text-align: center;
+    margin: 40px 0px;
+}
+footer #country ion-icon{
+    color: black;
+}
+footer select{
+    height: 30px;
+    width: 150px;
+    font-size: 20px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+}
